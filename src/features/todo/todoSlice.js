@@ -14,7 +14,9 @@ const addTodoFunc = (state, action) => {
 
 const removeTodoFunc = (state, action) => {
     state.todos = state.todos.filter((todo) => {
-        todo.id !== action.payload;
+        console.log("state", state);
+        console.log("Actions", action);
+        return todo.id !== action.payload;
     });
 }
 
