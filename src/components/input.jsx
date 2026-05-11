@@ -1,7 +1,7 @@
-const Input = ({ name, type, value, onChange }) => {
+const Input = ({ label, type, value, onChange}) => {
     return (
         <>
-            <label>{name}</label>
+            <label>{label}</label>
             <input
                 type={type}
                 value={value}
